@@ -1,0 +1,6 @@
+root ::= terminal | lr | tb
+
+lr ::= "LR(" terminal "," terminal ")"
+tb ::= "TB(" terminal "," terminal ")"
+
+terminal ::= "水" | "木" | "目" | "雨" | "日" | "口"
