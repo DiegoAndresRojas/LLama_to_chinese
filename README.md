@@ -44,8 +44,8 @@ Observação sobre o PyTorch: para obter o binário de PyTorch correto (por exem
 
 - HF_TOKEN — token do Hugging Face (opcional, recomendado para evitar limites anônimos ao baixar modelos):
 
-  export HF_TOKEN="seu_token_aqui"   # Linux/macOS
-  setx HF_TOKEN "seu_token_aqui"     # Windows (PowerShell/Prompt)
+  export HF_TOKEN="seu_token_aqui" # Linux/macOS
+  setx HF_TOKEN "seu_token_aqui" # Windows (PowerShell/Prompt)
 
 Também é possível rodar `huggingface-cli login` para configurar credenciais.
 
@@ -55,8 +55,9 @@ Por proteção de direitos autorais e distribuição, os arquivos SQLite usados 
 
 Para facilitar a reprodução, crie a pasta caso ela não exista e coloque os arquivos necessários:
 
-   mkdir -p assets/data
-   # copiar ou mover os .sqlite para assets/data/
+mkdir -p assets/data
+
+# copiar ou mover os .sqlite para assets/data/
 
 ## Como executar os exemplos
 
@@ -64,11 +65,11 @@ Com o venv ativado, execute os scripts diretamente com Python. Exemplos:
 
 - Rodar a geração/compilação da gramática e testes:
 
-  python src/app_ia/_com_spwc_bnf.py
+  python src/app_ia/\_com_spwc_bnf.py
 
 - Scripts auxiliares (exemplos):
 
-  python src/app_ia/_sem.py
+  python src/app_ia/\_sem.py
   python src/app_ia/app_com.py
 
 Observação: alguns scripts carregam modelos grandes e precisam de acesso à internet (Hugging Face) e recursos de memória. Para executar apenas partes que não exigem modelo, revise o código e comente o carregamento do modelo.
@@ -91,14 +92,4 @@ Observação: alguns scripts carregam modelos grandes e precisam de acesso à in
 3. Colocar os arquivos SQLite em `assets/data/` (se necessários)
 4. Rodar o script desejado com `python src/app_ia/_com_spwc_bnf.py`
 
-## Ajuda adicional
-
-Se ocorrerem erros durante a execução, copie o traceback e abra uma issue ou solicite suporte descrevendo:
-- Comandos executados
-- Versão do Python
-- Sistemas operacionais
-- Mensagens de erro completas
-
 ---
-
-(Arquivo gerado/atualizado automaticamente para orientar execução local.)
