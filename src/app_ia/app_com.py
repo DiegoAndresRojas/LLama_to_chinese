@@ -19,7 +19,7 @@ model = AutoModelForCausalLM.from_pretrained(
 
 config = AutoConfig.from_pretrained(model_name)
 
-with open("grammar.ebnf", encoding="utf-8") as f:
+with open("assets/grammar/grammar.ebnf", encoding="utf-8") as f:
     grammar = f.read()
 
 tokenizer_info = xgr.TokenizerInfo.from_huggingface(
