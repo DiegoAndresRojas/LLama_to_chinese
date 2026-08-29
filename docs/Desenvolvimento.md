@@ -21,6 +21,8 @@ Em seguida, foram instaladas as principais dependências necessárias para execu
 
 Essa configuração permitiu executar localmente um modelo de linguagem e controlar sua saída durante a inferência.
 
+Nota sobre os dados: os arquivos SQLite utilizados pelo projeto (por exemplo em assets/data/*.sqlite) não são incluídos no repositório por questões de proteção de direitos autorais e distribuição. Para reproduzir os experimentos, obtenha os arquivos necessários junto às fontes autorizadas ou ao responsável pelo projeto e coloque-os localmente na pasta assets/data. Certifique-se de ter permissão para usar e distribuir esses dados antes de adicioná-los ao repositório.
+
 ## 3. Seleção do modelo
 
 O modelo inicialmente previsto para o teste foi:
