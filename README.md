@@ -65,11 +65,11 @@ Com o venv ativado, execute os scripts diretamente com Python. Exemplos:
 
 - Rodar a geração/compilação da gramática e testes:
 
-  python src/app_ia/\_com_spwc_bnf.py
+  python src/app_ia/app_com_spwc.py
 
 - Scripts auxiliares (exemplos):
 
-  python src/app_ia/\_sem.py
+  python src/app_ia/app_sem.py
   python src/app_ia/app_com.py
 
 Observação: alguns scripts carregam modelos grandes e precisam de acesso à internet (Hugging Face) e recursos de memória. Para executar apenas partes que não exigem modelo, revise o código e comente o carregamento do modelo.
@@ -90,6 +90,6 @@ Observação: alguns scripts carregam modelos grandes e precisam de acesso à in
 1. Criar e ativar o venv
 2. Instalar dependências
 3. Colocar os arquivos SQLite em `assets/data/` (se necessários)
-4. Rodar o script desejado com `python src/app_ia/_com_spwc_bnf.py`
+4. Rodar o script desejado com `python src/app_ia/app_com_spwc.py`
 
 ---
